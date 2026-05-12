@@ -32,6 +32,8 @@ export type Character = {
   personality: string;
   usage: string;
   speakingStyle: string;
+  appearanceNotes?: string;
+  referenceImages?: string[];
   isPreloaded: boolean;
   isNameEditable: boolean;
   useInManga: boolean;
