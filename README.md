@@ -21,10 +21,15 @@ npm run dev
 - PNG出力（コマ番号あり確認版 / コマ番号なし完成版）
 - localStorage 保存/読み込み/初期化
 
-## 今後追加予定の機能
-- AI画像生成API接続
-- OpenAI API接続による高品質なストーリーボード生成
-- 画像レイヤーと文字レイヤーの統合タイムライン編集
+## 実装済みアップデート（同期と編集性の強化）
+- StoryboardEditor のセリフ・ナレーション編集時に、対応する TextLayer の `text`（および speech の `speaker`）を自動同期
+- コマ追加時に speech / narration の初期 TextLayer を同時追加
+- コマ削除時に、該当コマの TextLayer を同時削除
+- コマ並び替え・削除後に panelId を振り直す際、TextLayer 側の panelId も同時に整合
+- StoryboardEditor / TextLayerEditor の入力欄へラベル追加
+- キャラ管理に「この漫画で使用する」チェックを追加
+- ストーリーボード生成時は `useInManga=true` キャラの `displayName` を優先し、0人時は「案内役」を使用
+- キャラ追加ボタンを追加（displayName / role / personality / usage / speakingStyle を編集可能）
 
 ## 現在の制約
 - AI画像生成APIは未接続です。

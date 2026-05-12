@@ -21,7 +21,8 @@ export const generateStoryboard = (
 ): Storyboard => {
   const lines = splitLines(sourceText);
   const panelCount = estimatePanels(settings, lines.length);
-  const lead = characters[0]?.displayName ?? '案内役';
+  const activeCharacters = characters.filter((character) => character.useInManga);
+  const lead = activeCharacters[0]?.displayName ?? '案内役';
 
   const panels: StoryboardPanel[] = Array.from({ length: panelCount }, (_, index) => {
     const seed = lines[index % Math.max(1, lines.length)] ?? `場面 ${index + 1}`;

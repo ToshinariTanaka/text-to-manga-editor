@@ -11,5 +11,6 @@ export const defaultCharacters: Character[] = [
     speakingStyle: 'やわらかいが、要点ははっきり伝える',
     isPreloaded: true,
     isNameEditable: true,
+    useInManga: true,
   },
 ];

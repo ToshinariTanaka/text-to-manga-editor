@@ -34,6 +34,7 @@ export type Character = {
   speakingStyle: string;
   isPreloaded: boolean;
   isNameEditable: boolean;
+  useInManga: boolean;
 };
 
 export type Dialogue = { speaker: string; text: string };
