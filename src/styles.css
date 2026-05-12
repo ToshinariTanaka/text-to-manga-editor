@@ -20,3 +20,7 @@ textarea,input,select,button{font-size:16px;padding:6px;margin:4px 0}
 .reference-images{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-top:4px}
 .reference-image-item{border:1px solid #d8dde5;border-radius:8px;padding:6px;background:#fff;display:flex;flex-direction:column;gap:6px}
 .reference-image-item img{width:100%;height:100px;object-fit:cover;border-radius:6px;background:#eef1f5}
+
+.panel-character-thumbnails{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
+.panel-character-thumbnail-item{display:flex;flex-direction:column;align-items:center;gap:4px;font-size:12px;border:1px solid #d8dde5;border-radius:8px;padding:6px;background:#fff}
+.panel-character-thumbnail-item img{width:72px;height:72px;object-fit:cover;border-radius:6px;background:#eef1f5}
